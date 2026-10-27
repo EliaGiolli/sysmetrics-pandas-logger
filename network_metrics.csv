@@ -1,0 +1,11 @@
+interface_name,bytes_sent,bytes_recv,packets_sent,packets_recv
+Ethernet 2,0,0,0,0
+Ethernet,0,0,0,0
+Connessione alla rete locale (LAN)* 2,0,0,0,0
+Connessione alla rete locale (LAN)* 3,0,0,0,0
+Wi-Fi,489910840,6346571109,1344374,5330111
+VMware Network Adapter VMnet1,1130,44,1130,44
+VMware Network Adapter VMnet8,1062,0,1062,0
+Connessione di rete Bluetooth,0,0,0,0
+Loopback Pseudo-Interface 1,0,0,0,0
+vEthernet (Default Switch),307924,0,1691,0

@@ -14,9 +14,14 @@ class CSVMetricsRepository:
         
         # Verifichiamo se il file esiste già sul disco
         file_exists = os.path.exists(full_path)
-        
-        # Convertiamo il dizionario in un DataFrame di una singola riga
-        df = pd.DataFrame([data])
+
+        # Se i dati sono una lista, li passiamo direttamente; 
+        # altrimenti li racchiudiamo in una lista
+        if isinstance(data, list):
+            df = pd.DataFrame(data)
+        else:
+            df = pd.DataFrame([data])
+            
         
         # Se il file esiste già: mode='a' (append) e header=False
         # Se non esiste: mode='a' crea il file, ma serve header=True per la prima riga
